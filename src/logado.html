@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/imagem/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/desing-logado.css">
+    <title>logado</title>
+</head>
+<body>
+    <div class="corpo">
+        <div class="mensagem">
+            <h1>Login realizado com sucesso</h1><br>
+            <p>Clique no botão para voltar para a página de login:</p>
+            <button id="btn-volt" class="btn-volt" onclick="voltar()">Voltar</button>
+        </div> 
+    </div>
+
+    <script>
+        function voltar(){
+            history.back();
+        }
+    </script>
+</body>
+</html>

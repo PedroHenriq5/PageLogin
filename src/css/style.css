@@ -1,0 +1,90 @@
+@font-face {
+    font-family:philo ;
+    src: url(../font/Philosopher-Bold.ttf);
+}
+
+body{
+    background-color: rgb(166, 179, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home{
+    background-color: #fff;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.home .inicio{
+    font-family: "philo", Times, serif;
+    background-color: #f1e0d4e3;
+    width: 50%;
+    text-align: center;
+    color: #1d1d1d;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home .inicio p{
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.home .login{
+    background-color: #fff;
+    text-align: center;
+    width: 50%;
+    border-radius:0px 20px 20px 0px ;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    font-family: "philo", Times, serif;
+}
+
+.home .login .input_text {
+    padding: 20px;
+    line-height: 1.5;
+    padding: 20px;
+   
+}
+
+.home .login .input_text input{
+    cursor: text;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.home .login .input_text i{
+    cursor: pointer;
+    position: absolute;
+    font-size: 25px;
+    margin-top: -7px;
+    padding: 5px;
+}
+
+
+.home .login .input_text .btn{
+    cursor: pointer;
+    position: relative;
+    width: 10vw;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    transition:  scale 0.25s ease-in;
+}
+
+.home .login .input_text .btn:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    scale: 1.2;
+    background-color: #1d1d1d;
+    color: #fff;
+    font-size: 20px;
+    width: 25%;
+}
