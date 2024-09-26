@@ -10,28 +10,23 @@
     <title>Página de login</title>
 </head>
 <body>
-    <div class="home">
-        <div class="inicio">
-            <h1>É hora de começar!</h1>
-            <p>Faça login agora e mergulhe em uma experiência única.</p>
-        </div>
-        <div class="login">
+    <main class="home">
+        <div class="conatiner">
             <h1>Faça seu login</h1>
-        <div class="input_text">
-            <div>
-            <form action="home.html">
-                <label for="email">Informe o seu e-mail:</label><br>
-                <input type="email" class="email" id="email"> 
-            <br>
-                <label for="senha">Digite a sua senha:</label><br>
-                <input type="password" class="senha" id="senha">
-                <i class="bi bi-eye" id="eye" onclick="mostrarsenha()"></i>
-            </form><br>
+            <div class="ConatainerQuest">
+                    <form action="home.html" class="form">
+                        <label for="email">Informe o seu e-mail:</label><br>
+                        <input type="email" class="email" id="email" placeholder="Email">
+                        <span class="hide" id="msgErroEmail">Email vazio</span><br>
+                        <label for="senha">Digite a sua senha:</label><br>
+                        <input type="password" class="senha" id="senha" placeholder="Senha">
+                        <span class="hide" id="msgErroSenha">Senha menor que 8 dígitos</span><br>
+                        <i class="bi bi-eye" id="eye" > Mostrar senha</i>
+                    </form><br>
+                <button class="btn" id="btn">Entrar</button>            
             </div>
-            <button class="btn" id="btn" onclick="logar()">Entrar</button>            
         </div>
-        </div>
-    </div>
-    <script src="src/javascript.js"></script>
+    </main>
+    <script src="src/js/javascript.js"></script>
 </body>
 </html>

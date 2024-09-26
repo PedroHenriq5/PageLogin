@@ -3,88 +3,73 @@
     src: url(../font/Philosopher-Bold.ttf);
 }
 
-body{
-    background-color: rgb(166, 179, 238);
+body, html {
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
-.home{
-    background-color: #fff;
-    width: 50%;
-    text-align: center;
-    border-radius: 20px;
+.conatiner {
+    width: 500px;
     display: flex;
-}
-
-.home .inicio{
-    font-family: "philo", Times, serif;
-    background-color: #f1e0d4e3;
-    width: 50%;
-    text-align: center;
-    color: #1d1d1d;
-    border-radius: 20px 0px 0px 20px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
-}
-
-.home .inicio p{
-    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    line-height: 1.5;
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.home .login{
-    background-color: #fff;
-    text-align: center;
-    width: 50%;
-    border-radius:0px 20px 20px 0px ;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
-    font-family: "philo", Times, serif;
+.ConatainerQuest {
+    width: 100%;
+    max-width: 450px;
 }
 
-.home .login .input_text {
-    padding: 20px;
-    line-height: 1.5;
-    padding: 20px;
-   
-}
-
-.home .login .input_text input{
-    cursor: text;
-    background-color: transparent;
-    border-radius: 3px;
-    padding: 5px 8px;
-    font-size: 13px;
-    transition: 0.5s;
-}
-
-.home .login .input_text i{
-    cursor: pointer;
-    position: absolute;
-    font-size: 25px;
-    margin-top: -7px;
-    padding: 5px;
-}
-
-
-.home .login .input_text .btn{
-    cursor: pointer;
-    position: relative;
-    width: 10vw;
-    height: 25px;
-    border-radius: 15px;
+.ConatainerQuest .form input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 15px;
-    transition:  scale 0.25s ease-in;
 }
 
-.home .login .input_text .btn:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    scale: 1.2;
-    background-color: #1d1d1d;
-    color: #fff;
+.ConatainerQuest .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
     font-size: 20px;
-    width: 25%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ConatainerQuest .btn:hover {
+    background-color: #0056b3;
+}
+
+.ConatainerQuest .form label{
+    font-size: 25px;
+}
+
+.ConatainerQuest span{
+    color: rgb(244, 15, 15);
+    font-size: 20px; 
+    line-height: 2.0;
+}
+
+.ConatainerQuest .form .bi{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
 }
